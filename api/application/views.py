@@ -1,7 +1,8 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .model import MalhaLogistica
+from .models import Logistica
+from .serializers import LogisticaSerializer
 
-class MalhaLogisticaViewSet(viewsets.ModelViewSet):
-	queryset = User.objects.all()
-	seralizer_class = UserSerializer
+class LogisticaViewSet(viewsets.ModelViewSet):
+	queryset = Logistica.objects.all()
+	serializer_class = LogisticaSerializer
