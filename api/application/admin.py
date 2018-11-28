@@ -1,5 +1,5 @@
 from django.contrib import admin
-from application.models import Logistica
+from .models import Mapas
 
 
-admin.site.register(Logistica)
+admin.site.register(Mapas)

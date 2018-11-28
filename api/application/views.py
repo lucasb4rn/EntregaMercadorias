@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from rest_framework import viewsets
-from .models import Logistica
-from .serializers import LogisticaSerializer
+from .models import Mapas
+from .serializers import MapasSerializer
 
-class LogisticaViewSet(viewsets.ModelViewSet):
-	queryset = Logistica.objects.all()
-	serializer_class = LogisticaSerializer
+class MapasViewSet(viewsets.ModelViewSet):
+
+	queryset = Mapas.objects.all()
+
+	serializer_class = MapasSerializer

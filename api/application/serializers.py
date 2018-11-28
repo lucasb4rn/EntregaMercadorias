@@ -1,11 +1,11 @@
 from django.conf.urls import url, include
 from django.contrib.auth.models import User
 from rest_framework import serializers
-from application.models import Logistica
+from application.models import Mapas
 
 
 # Serializers define the API representation.
-class LogisticaSerializer(serializers.ModelSerializer):
+class MapasSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Logistica
-        fields = ('nome', 'ponto_inicial', 'ponto_final', 'distancia')
+        model = Mapas
+        fields = ('ponto_inicial', 'ponto_final', 'distancia')
